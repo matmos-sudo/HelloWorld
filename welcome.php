@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -11,18 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1 class="H1">Please log in or sign up.</h1>
-<div class="login">
-    <form method="POST" action="include/handler.php">
-        Enter your username:<br>
-        <input class="pole" type="text" placeholder="username" name="username" required><br>
-        Enter your password:<br>
-        <input class="pole" type="password" placeholder="password" name="password" required><br>
-        <input type="submit" value="SUBMIT" class="submit">
-    </form>
-    <a class="signup" href="signup.php">SIGN UP</a>
-</div>
+<h1 class="H1">Welcome <?php echo htmlspecialchars($_SESSION["username"]);?> your password is: <?php echo htmlspecialchars($_SESSION["password"]);?> !</h1>
 </body>
 </html>
+
 
 

@@ -1,0 +1,102 @@
+body{
+    font-family: "Comfortaa", Geneva, Tahoma, sans-serif, cursive;
+    background-color: #fdf6e3;
+    color:#5c4d4d;
+}
+.H1{
+    text-align: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 350px;
+    margin: 50px auto;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+
+}
+.signup{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: #9CAF88;
+    color: #ffffff;
+    font-family: 'Comfortaa', Geneva, Tahoma, sans-serif, cursive;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 14px 28px;
+    margin-top: 50px;
+}
+.submit{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: #9CAF88;
+    color: #ffffff;
+    font-family: 'Comfortaa', Geneva, Tahoma, sans-serif, cursive;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 14px 28px;
+    margin-top: 50px;
+}
+.signup:hover{
+    background-color: #7D8F69;
+    transform: translate(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.signup:active{
+    transform: translateY(1px);
+}
+.submit:active{
+    transform: translateY(1px);
+}
+.submit:hover{
+    background-color: #7D8F69;
+    transform: translate(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.pole{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #FAF7F2;
+    color: #5C4D4D;
+    border: 2px solid #E6CCB2;
+    border-radius: 12px;
+    font-family: 'Comfortaa', Geneva, Tahoma, sans-serif, cursive;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+.pole :focus{
+    border-color: #9CAF88;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(156, 175, 136, 0.3);
+    transform: scale(1.01);
+}
+.pole ::placeholder{
+    color: #C0B0A0;
+    font-style: italic;
+    opacity: 0.7;
+}
