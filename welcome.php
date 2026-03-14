@@ -8,7 +8,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Test</title>
     <link rel="stylesheet" href="css/style.css">
-    <script rel="javascript" src="js/js.js"></script>
+    <script rel="javascript" src="js/javascript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Special+Elite&display=swap" rel="stylesheet">
