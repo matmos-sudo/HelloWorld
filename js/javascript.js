@@ -1,22 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.querySelector('form');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+    const usernameError = document.getElementById('username-error');
+    const passwordError = document.getElementById('password-error');
 
+    const minLengthPass = 4;
+    const minLengthUser = 4;
 
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        const username = document.getElementById('username').value.trim();
-        const password = document.getElementById('password').value.trim();
+        let isValid = true;
 
-        const minLengthPass = 4;
-        const minLengthUser = 4;
+        usernameError.style.display = 'none';
+        passwordError.style.display = 'none';
+
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
 
 
         if(username.length < minLengthUser) {
-            alert(`Username must be at least ${minLengthUser} characters long.`);
-        }else if(password.length < minLengthPass){
-            alert(`Password must be at least ${minLengthPass} characters long.`);
-        }else{
+            usernameError.textContent = `Username must be at least ${minLengthUser} characters long.`;
+            usernameError.style.display = 'block';
+            isValid = false;
+        }
+        if(password.length < minLengthPass){
+            passwordError.textContent  = `Password must be at least ${minLengthPass} characters long.`;
+            passwordError.style.display = 'block';
+            isValid = false;
+        }
+        if(isValid){
             loginForm.submit();
         }
     });
